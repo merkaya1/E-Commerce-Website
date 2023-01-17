@@ -507,11 +507,13 @@ header {
   padding-bottom: 40px; }
   .products .product-wrapper .product-list {
     display: flex;
+    justify-content: center;
     gap: 1rem;
     flex-wrap: wrap; }
     .products .product-wrapper .product-list .product-item {
       flex: 1;
       min-width: 200px;
+      max-width: 500px;
       text-align: center;
       background-color: #efefef;
       display: flex;
@@ -595,3 +597,59 @@ header {
         visibility: visible;
         opacity: 1;
         left: 10px; }
+
+.campaigns .campaigns-wrapper:nth-child(1) .campaign-item:nth-child(1) {
+  background-image: url(../img/campaigns/banner1.png); }
+
+.campaigns .campaigns-wrapper:nth-child(1) .campaign-item:nth-child(2) {
+  background-image: url(../img/campaigns/banner2.png); }
+
+.campaigns .campaigns-wrapper:nth-child(2) .campaign-item:nth-child(1) {
+  background-image: url(../img/campaigns/banner3.png); }
+
+.campaigns .campaigns-wrapper:nth-child(2) .campaign-item:nth-child(2) {
+  background-image: url(../img/campaigns/banner4.png); }
+
+.campaigns .campaigns-wrapper .campaign-item {
+  padding: 70px 35px;
+  background-size: cover;
+  background-position: center;
+  color: #fff; }
+  .campaigns .campaigns-wrapper .campaign-item .campaign-title {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    width: 50%;
+    text-transform: capitalize; }
+  .campaigns .campaigns-wrapper .campaign-item .campaign-desc {
+    margin: 40px 0; }
+
+.campaigns .wrapper-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "top-left top-right";
+  gap: 30px;
+  margin: 30px 0; }
+  .campaigns .wrapper-top .top-left {
+    grid-area: top-left; }
+  .campaigns .wrapper-top .top-right {
+    grid-area: top-right; }
+
+.campaigns .wrapper-bottom {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  grid-template-areas: "bottom-left bottom-right";
+  gap: 30px;
+  margin: 30px 0; }
+  .campaigns .wrapper-bottom .bottom-left {
+    grid-area: bottom-left; }
+  .campaigns .wrapper-bottom .bottom-right {
+    grid-area: bottom-right; }
+
+@media (max-width: 768px) {
+  .campaigns .wrapper-top {
+    grid-template-columns: 1fr;
+    grid-template-areas: "top-left" "top-right"; }
+  .campaigns .wrapper-bottom {
+    grid-template-columns: 1fr;
+    grid-template-areas: "bottom-left" "bottom-right"; } }
