@@ -1,0 +1,48 @@
+.blogs {
+    margin-bottom: 100px;
+    .blog-list {
+      @include d-flex(center, center);
+      gap: 1rem;
+      flex-wrap: wrap;
+      .blog-item {
+        flex: 1;
+        min-width: 300px;
+        .blog-img {
+          display: flex;
+          img {
+            width: 100%;
+          }
+        }
+        .blog-info {
+          padding-bottom: 25px;
+          text-align: center;
+          font-size: 14px;
+          box-shadow: 0px 5px 15px  rgba(0,0,0,0.4);
+          .blog-info-top {
+            color: rgb(159, 155, 155);
+            padding-top: 10px;
+            span {
+              
+              font-weight: 500;
+            }
+          }
+          .blog-info-bottom {
+            h3{
+              margin: .8rem 0;
+              font-size: 20px;
+            }
+            .blog-readmore {
+              font-size: 14px;
+              padding-bottom: 4px;
+              border-bottom: 1px solid #000;
+              &:hover {
+                color: $primary-color;
+                border-color:$primary-color;
+              }
+            }
+          }
+          
+        }
+      }
+    }
+  }

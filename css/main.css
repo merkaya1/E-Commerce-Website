@@ -653,3 +653,39 @@ header {
   .campaigns .wrapper-bottom {
     grid-template-columns: 1fr;
     grid-template-areas: "bottom-left" "bottom-right"; } }
+
+.blogs {
+  margin-bottom: 100px; }
+  .blogs .blog-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap; }
+    .blogs .blog-list .blog-item {
+      flex: 1;
+      min-width: 300px; }
+      .blogs .blog-list .blog-item .blog-img {
+        display: flex; }
+        .blogs .blog-list .blog-item .blog-img img {
+          width: 100%; }
+      .blogs .blog-list .blog-item .blog-info {
+        padding-bottom: 25px;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4); }
+        .blogs .blog-list .blog-item .blog-info .blog-info-top {
+          color: #9f9b9b;
+          padding-top: 10px; }
+          .blogs .blog-list .blog-item .blog-info .blog-info-top span {
+            font-weight: 500; }
+        .blogs .blog-list .blog-item .blog-info .blog-info-bottom h3 {
+          margin: .8rem 0;
+          font-size: 20px; }
+        .blogs .blog-list .blog-item .blog-info .blog-info-bottom .blog-readmore {
+          font-size: 14px;
+          padding-bottom: 4px;
+          border-bottom: 1px solid #000; }
+          .blogs .blog-list .blog-item .blog-info .blog-info-bottom .blog-readmore:hover {
+            color: #1367ef;
+            border-color: #1367ef; }
