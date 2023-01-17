@@ -1,0 +1,95 @@
+.slider {
+    position: relative;
+    .slider-elements {
+      .slider-item {
+        position: relative;
+        height: calc(100vh - 137px);
+        @include d-flex(start, center);
+        .slider-image {
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50%;
+            z-index: -1;
+          }
+        }
+        .container {
+          .slider-title {
+            font-size: 18px;
+            font-weight: 500;
+          }
+          .slider-heading {
+            font-size: 3rem;
+            text-shadow: 0px 2px 5px $primary-color;
+          }
+          a{
+            z-index: 1;
+            position: relative;
+          }
+        }
+      }
+      .slider-buttons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 0 2%;
+        @include d-flex(space-between, center);
+        button {
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+          background-color: #fff;
+          font-size: 20px;
+          color: rgb(10, 10, 10);
+          opacity: 0.4;
+          transition: none !important;
+          &:hover {
+            color: #fff;
+            background-color: $primary-color;
+            box-shadow: 0px 0px 10px $primary-color;
+            opacity: 1;
+          }
+        }
+      }
+      .slider-dots {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        @include d-flex(center, center);
+        column-gap: 6px;
+        .slidet-dot {
+          background-color: transparent;
+          @include d-flex(center, center);
+          span {
+            display: inline-block;
+            height: 13px;
+            width: 13px;
+            border-radius: 50%;
+            background-color: $primary-color;
+            opacity: 0.5;
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 582px) {
+    .slider {
+      .slider-elements {
+        .slider-item {
+          height: calc(100vh - 155px);
+        }
+        .slider-buttons {
+          display: none;
+        }
+      }
+    }
+  }
