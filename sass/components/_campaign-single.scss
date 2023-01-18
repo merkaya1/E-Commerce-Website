@@ -1,0 +1,41 @@
+.campaign-single {
+    background-image: url(../img/single-campaign.png);
+    padding: 140px 15px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   margin-top: 50px;
+    .campaign-wrapper {
+        @include d-flex(center, center);
+        flex-direction: column;
+        color: #fff;
+        h2 {
+            font-size: 25px;
+        }
+        strong {
+            font-size: 55px;
+            margin: 20px 0;
+            margin-bottom: 50px;
+            position: relative;
+            &::after {
+                content: "";
+                width: 50px;
+                height: 5px;
+                background-color: #fff;
+                position: absolute;
+                bottom: -15px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        a {
+            background-color: #fff;
+            border: transparent;
+            &:hover {
+                background-color: $primary-color;
+                color: #fff;
+                
+            }
+        }
+    }
+}
