@@ -689,3 +689,23 @@ header {
           .blogs .blog-list .blog-item .blog-info .blog-info-bottom .blog-readmore:hover {
             color: #1367ef;
             border-color: #1367ef; }
+
+.brands .brand-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border: 1px solid #b6b7bd;
+  flex-wrap: wrap; }
+  .brands .brand-list .brand-item {
+    flex: 1;
+    width: 100%;
+    text-align: center; }
+    .brands .brand-list .brand-item img {
+      min-width: 150px;
+      opacity: .5; }
+      .brands .brand-list .brand-item img:hover {
+        scale: 1.02;
+        opacity: 1;
+        cursor: pointer; }
