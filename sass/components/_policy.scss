@@ -1,0 +1,27 @@
+.policy {
+    border-top: 1px solid #babbbe ;
+    margin-top: 30px;
+    padding: 20px 0;
+    .policy-list {
+        @include d-flex(space-between, center);
+        gap: 20px;
+        flex-wrap: wrap;
+        .policy-item {
+            flex: 1;
+            min-width: 200px;
+            @include d-flex(center, center);
+            gap: 1rem;
+            i{
+                font-size: 50px;
+            }
+            .policy-item-info {
+                @include d-flex(center, start);
+                flex-direction: column;
+                span {
+                    font-size: 12px;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

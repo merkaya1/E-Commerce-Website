@@ -26,11 +26,7 @@ header {
                     cursor: pointer;
                     display: none;
                 }
-                .header-left{
-                    .logo{
-                        @include logo()
-                    }
-                }
+                
                 .header-center{
                     > .bi-x-square-fill {
                         display: none;
@@ -88,6 +84,7 @@ header {
                                     top: 100%;
                                     opacity: 0;
                                     visibility: hidden;
+                                    
                                     .menu-dropdown-content{
                                         width: 220px;
                                         border: 1px solid #dee0ea;
@@ -109,7 +106,7 @@ header {
                                 &:hover .menu-dropdown-wrapper{
                                     opacity: 1;
                                     visibility: visible;
-                                   
+                                    z-index: 3;
                                     
                                 }
                             }
@@ -121,6 +118,7 @@ header {
                                     @include d-flex(center, center );
                                     .menu-dropdown-megamenu{
                                         border: 1px solid #dee0ea;
+                                        background-color: #fff;
                                         padding: 22px;
                                         @include d-flex(center, start);
                                         gap: 50px;
