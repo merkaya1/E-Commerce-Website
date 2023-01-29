@@ -57,17 +57,22 @@ button {
     background-color: #fff;
     color: #1367ef; }
 
+textarea {
+  overflow: auto; }
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
-input[type="number"] {
+input[type="number"],
+textarea {
   outline: none;
   border: 1px solid #dee0ea;
   padding: 8px 15px; }
   input[type="text"]:focus,
   input[type="password"]:focus,
   input[type="email"]:focus,
-  input[type="number"]:focus {
+  input[type="number"]:focus,
+  textarea:focus {
     border-color: grey; }
 
 input[type="number"]::-webkit-inner-spin-button {
@@ -931,3 +936,261 @@ header {
       text-align: center; }
       .footer .widgets-row .footer-widgets .footer-nav-wrapper .footer-nav .widgets-title {
         margin-bottom: 0.5rem; } }
+
+.contact .contact-bottom {
+  margin: 30px 0; }
+  .contact .contact-bottom .contact-titles {
+    width: 75%; }
+    .contact .contact-bottom .contact-titles h4 {
+      color: #f06868;
+      font-weight: 500; }
+    .contact .contact-bottom .contact-titles h2 {
+      font-weight: 600;
+      font-size: 40px; }
+    .contact .contact-bottom .contact-titles p {
+      font-size: 14px; }
+  .contact .contact-bottom .contact-elements {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px; }
+    .contact .contact-bottom .contact-elements form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; }
+      .contact .contact-bottom .contact-elements form div {
+        flex-basis: calc(50% - 10px);
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem; }
+        .contact .contact-bottom .contact-elements form div:nth-child(3), .contact .contact-bottom .contact-elements form div:nth-child(4) {
+          flex-basis: 100%; }
+        .contact .contact-bottom .contact-elements form div label {
+          font-size: 14px; }
+          .contact .contact-bottom .contact-elements form div label span {
+            color: #f06868; }
+      .contact .contact-bottom .contact-elements form button {
+        background-color: #000;
+        color: #fff; }
+    .contact .contact-bottom .contact-elements .contact-info {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px; }
+      .contact .contact-bottom .contact-elements .contact-info .contact-info-item {
+        font-size: 14px; }
+        .contact .contact-bottom .contact-elements .contact-info .contact-info-item .contact-street, .contact .contact-bottom .contact-elements .contact-info .contact-info-item .contact-date {
+          margin: 15px 0; }
+
+@media (max-width: 768px) {
+  .contact .contact-titles {
+    width: 100%; }
+  .contact .contact-bottom .contact-elements {
+    flex-direction: column;
+    gap: 50px; } }
+
+@media (max-width: 576px) {
+  .contact .contact-bottom .contact-elements form {
+    flex-direction: column;
+    width: 100%; }
+    .contact .contact-bottom .contact-elements form div {
+      flex-basis: 100% !important; } }
+
+.account-page .account-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding-top: 50px; }
+  .account-page .account-wrapper .account-column {
+    flex: 1;
+    width: 100%; }
+    .account-page .account-wrapper .account-column h2 {
+      font-weight: 500;
+      margin-bottom: 1rem; }
+    .account-page .account-wrapper .account-column form div {
+      margin: 0.5rem 0; }
+      .account-page .account-wrapper .account-column form div label {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .3rem;
+        font-size: 14px; }
+        .account-page .account-wrapper .account-column form div label span {
+          color: #E51414; }
+        .account-page .account-wrapper .account-column form div label input {
+          width: 100%; }
+    .account-page .account-wrapper .account-column form .remember {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: .4rem; }
+      .account-page .account-wrapper .account-column form .remember label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .4rem; }
+        .account-page .account-wrapper .account-column form .remember label span {
+          font-size: 14px; }
+      .account-page .account-wrapper .account-column form .remember button {
+        margin: 0.5rem 0;
+        background-color: #E51414;
+        border: none;
+        color: #fff; }
+      .account-page .account-wrapper .account-column form .remember p {
+        font-size: 14px;
+        opacity: 0.7; }
+    .account-page .account-wrapper .account-column form .form-link {
+      font-size: 12px;
+      color: #E51414; }
+
+@media (max-width: 768px) {
+  .account-page .account-wrapper {
+    flex-direction: column;
+    align-items: start; } }
+
+.cart-page {
+  margin: 30px 0; }
+  .cart-page .cart-page-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; }
+    .cart-page .cart-page-wrapper .cart-form {
+      flex-basis: 60%;
+      width: 100%; }
+      .cart-page .cart-page-wrapper .cart-form .free-progress-bar {
+        border: 1px solid #dee0ea;
+        padding: 20px; }
+        .cart-page .cart-page-wrapper .cart-form .free-progress-bar .progress-bar-title {
+          font-size: 12px; }
+          .cart-page .cart-page-wrapper .cart-form .free-progress-bar .progress-bar-title span {
+            color: #E51414;
+            font-weight: 600; }
+        .cart-page .cart-page-wrapper .cart-form .free-progress-bar .progress-bar {
+          width: 100%;
+          height: 6px;
+          background-color: #dadbde;
+          margin-top: 8px;
+          position: relative; }
+          .cart-page .cart-page-wrapper .cart-form .free-progress-bar .progress-bar .progress {
+            background-color: #E51414;
+            width: 40%;
+            display: inline-block;
+            height: 6px;
+            position: absolute;
+            z-index: 2;
+            border-radius: .8rem; }
+      .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper {
+        overflow-x: auto; }
+        .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .shop-table {
+          border-collapse: collapse;
+          width: 100%;
+          font-size: 14px;
+          margin: 30px 0;
+          min-width: 600px; }
+          .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .shop-table thead th {
+            text-align: start;
+            font-weight: 600; }
+            .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .shop-table thead th:nth-last-of-type(1), .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .shop-table thead th:nth-last-of-type(2) {
+              text-align: center; }
+          .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .shop-table .cart-wrapper {
+            border-top: 1px solid #dee0ea; }
+            .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .shop-table .cart-wrapper .cart-item {
+              border-bottom: 1px solid #dee0ea; }
+              .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .shop-table .cart-wrapper .cart-item .body-quantitiy,
+              .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .shop-table .cart-wrapper .cart-item .body-subtotal {
+                text-align: center; }
+              .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .shop-table .cart-wrapper .cart-item .cart-image {
+                position: relative; }
+                .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .shop-table .cart-wrapper .cart-item .cart-image img {
+                  width: 60px; }
+                .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .shop-table .cart-wrapper .cart-item .cart-image i {
+                  position: absolute;
+                  top: 2px;
+                  left: -5%;
+                  background-color: #E51414;
+                  color: #fff;
+                  width: 1rem;
+                  height: 1rem;
+                  display: grid;
+                  place-content: center;
+                  border-radius: 100%;
+                  cursor: pointer;
+                  font-size: 14px; }
+        .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .shop-table > :not(caption) > * > * {
+          padding: 8px 0; }
+        .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .actions-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 10px; }
+          .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .actions-wrapper .cuopon {
+            display: flex;
+            align-items: center;
+            gap: 10px; }
+            .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .actions-wrapper .cuopon input {
+              height: 40px; }
+            .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .actions-wrapper .cuopon button {
+              background-color: #E51414;
+              color: #fff;
+              opacity: 0.7;
+              border: none; }
+              .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .actions-wrapper .cuopon button:hover {
+                opacity: 1; }
+          .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .actions-wrapper .update-cart .btn {
+            background-color: black;
+            color: #fff; }
+            .cart-page .cart-page-wrapper .cart-form .shop-table-wrapper .actions-wrapper .update-cart .btn:hover {
+              background-color: rgba(0, 0, 0, 0.7); }
+    .cart-page .cart-page-wrapper .cart-collaterals {
+      flex: 0 0 300px;
+      padding: 30px;
+      border: 1px solid #dee0ea;
+      width: 100%; }
+      .cart-page .cart-page-wrapper .cart-collaterals h2 {
+        font-size: 16px;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #dee0ea; }
+      .cart-page .cart-page-wrapper .cart-collaterals .cart-totals .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid #dee0ea;
+        font-size: 14px; }
+        .cart-page .cart-page-wrapper .cart-collaterals .cart-totals .flex:nth-last-of-type(1) {
+          border: none;
+          margin-bottom: 1.5rem; }
+        .cart-page .cart-page-wrapper .cart-collaterals .cart-totals .flex .shipping-box {
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          flex-direction: column;
+          gap: 10px; }
+          .cart-page .cart-page-wrapper .cart-collaterals .cart-totals .flex .shipping-box .fast-cargo {
+            display: flex;
+            align-items: center;
+            gap: 10px; }
+            .cart-page .cart-page-wrapper .cart-collaterals .cart-totals .flex .shipping-box .fast-cargo input {
+              cursor: pointer; }
+          .cart-page .cart-page-wrapper .cart-collaterals .cart-totals .flex .shipping-box .bold {
+            color: #E51414;
+            font-weight: 600; }
+        .cart-page .cart-page-wrapper .cart-collaterals .cart-totals .flex strong {
+          font-size: 20px; }
+      .cart-page .cart-page-wrapper .cart-collaterals .cart-totals .btn {
+        background-color: #e51414;
+        color: #fff;
+        border-color: #e51414;
+        opacity: 0.7;
+        width: 100%; }
+        .cart-page .cart-page-wrapper .cart-collaterals .cart-totals .btn:hover {
+          opacity: 1; }
+
+@media (max-width: 992px) {
+  .cart-page .cart-page-wrapper {
+    flex-direction: column; } }

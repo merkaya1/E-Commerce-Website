@@ -92,11 +92,16 @@ button{
     }
     
 }
+textarea {
+    overflow: auto;
+   
+}
 // inputs 
 input[type="text"],
 input[type="password"],
 input[type="email"],
-input[type="number"] {
+input[type="number"],
+textarea {
     outline: none;
     border: 1px solid #dee0ea;
     padding: 8px 15px;
@@ -107,6 +112,8 @@ input[type="number"] {
 input[type="number"]::-webkit-inner-spin-button{
     opacity: 1;
 }
+
+
 
 .img-fluid {
     width: 100%;
