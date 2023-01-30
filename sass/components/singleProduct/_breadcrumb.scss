@@ -1,0 +1,22 @@
+.single-product {
+    .breadcrumb {
+        ul {
+            @include d-flex (flex-start, center);
+            
+            li {
+                font-size: 12px;
+                &:not(:last-child)::after {
+                    content: "/";
+                    color: #c5c6cc;
+                    margin: 0 5px;
+                }
+                a {
+                    &:hover {
+                        text-decoration: underline;
+
+                    }
+                }
+            }
+        }
+    }
+}
