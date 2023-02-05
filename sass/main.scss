@@ -44,7 +44,7 @@
             h3 {
                 font-size: 16px;
                 margin: 15px 0;
-                font-weight: 500;
+                font-weight: 500; 
             }
             .tab-list {
                 @include d-flex(flex-start, center);
@@ -102,6 +102,87 @@
                             }
                             
                         }
+                    }
+                    .review-form-wrapper {
+                        // globals
+                        span.required {
+                            color: #e51414;
+                        }
+                        // globals end
+                        h2 {
+                            font-size: 20px;
+                            font-weight: 500;
+                            margin: 20px 0;
+                            padding-bottom: 16px ;
+                            border-bottom: 1px solid #dee0ea;
+                        }
+                        .comment-form {
+                           
+                            .comments-noter {
+                                margin-bottom: 15px;
+                            }
+                               
+                            .comment-form-raiting {
+                                margin-bottom: 15px;
+                                label {
+                                    display: inline-block;
+                                    padding-bottom: 10px;
+                                }
+                                .stars {
+                                    @include d-flex(flex-start, center);
+                                    gap: 16px;
+                                    .star {
+                                        position: relative;
+                                        font-size: 10px;
+                                        transition: 0ms;
+                                        color: rgb(185, 183, 183);
+                                        &:hover {
+                                            color: #f3e308;
+                                        }
+                                        &:not(:last-child)::after {
+                                            content: "";
+                                            width: 1px;
+                                            height: 20px;
+                                            position: absolute;
+                                            background-color: #dee0ea;
+                                            top: -50%;
+                                            right: -8px;
+                                            transform: translateY(25%);
+                                        }
+                                        i {
+                                            transition: none;
+                                        }
+                                    }
+                                    .star.active {
+                                        color: #f3e308;
+                                    }
+                                }
+                            }
+                            .comment-flex {
+                                display: flex;
+                                flex-direction: column;
+                                gap: .5rem;
+                                margin-bottom: 1rem;
+                            }
+                            .comment-form-cookies  {
+                                @include d-flex (flex-start, center);
+                                gap: 10px;
+                                margin-bottom: 1rem;
+                            }
+                            .form-submit {
+                                .submit {
+                                    background-color: #e51414;
+                                    border-color: #e51414;
+                                    color: #fff;
+                                    cursor: pointer;
+                                    opacity: 0.6;
+                                    &:hover {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+
                     }
                 }
             }

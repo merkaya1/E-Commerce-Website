@@ -1418,3 +1418,62 @@ header {
             gap: 5px;
             color: #f3e308;
             font-size: 12px; }
+    .single-product .single-product-wrapper .single-tabs .tab-panel .tab-panel-reviews .review-form-wrapper span.required {
+      color: #e51414; }
+    .single-product .single-product-wrapper .single-tabs .tab-panel .tab-panel-reviews .review-form-wrapper h2 {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 20px 0;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #dee0ea; }
+    .single-product .single-product-wrapper .single-tabs .tab-panel .tab-panel-reviews .review-form-wrapper .comment-form .comments-noter {
+      margin-bottom: 15px; }
+    .single-product .single-product-wrapper .single-tabs .tab-panel .tab-panel-reviews .review-form-wrapper .comment-form .comment-form-raiting {
+      margin-bottom: 15px; }
+      .single-product .single-product-wrapper .single-tabs .tab-panel .tab-panel-reviews .review-form-wrapper .comment-form .comment-form-raiting label {
+        display: inline-block;
+        padding-bottom: 10px; }
+      .single-product .single-product-wrapper .single-tabs .tab-panel .tab-panel-reviews .review-form-wrapper .comment-form .comment-form-raiting .stars {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px; }
+        .single-product .single-product-wrapper .single-tabs .tab-panel .tab-panel-reviews .review-form-wrapper .comment-form .comment-form-raiting .stars .star {
+          position: relative;
+          font-size: 10px;
+          transition: 0ms;
+          color: #b9b7b7; }
+          .single-product .single-product-wrapper .single-tabs .tab-panel .tab-panel-reviews .review-form-wrapper .comment-form .comment-form-raiting .stars .star:hover {
+            color: #f3e308; }
+          .single-product .single-product-wrapper .single-tabs .tab-panel .tab-panel-reviews .review-form-wrapper .comment-form .comment-form-raiting .stars .star:not(:last-child)::after {
+            content: "";
+            width: 1px;
+            height: 20px;
+            position: absolute;
+            background-color: #dee0ea;
+            top: -50%;
+            right: -8px;
+            transform: translateY(25%); }
+          .single-product .single-product-wrapper .single-tabs .tab-panel .tab-panel-reviews .review-form-wrapper .comment-form .comment-form-raiting .stars .star i {
+            transition: none; }
+        .single-product .single-product-wrapper .single-tabs .tab-panel .tab-panel-reviews .review-form-wrapper .comment-form .comment-form-raiting .stars .star.active {
+          color: #f3e308; }
+    .single-product .single-product-wrapper .single-tabs .tab-panel .tab-panel-reviews .review-form-wrapper .comment-form .comment-flex {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      margin-bottom: 1rem; }
+    .single-product .single-product-wrapper .single-tabs .tab-panel .tab-panel-reviews .review-form-wrapper .comment-form .comment-form-cookies {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 1rem; }
+    .single-product .single-product-wrapper .single-tabs .tab-panel .tab-panel-reviews .review-form-wrapper .comment-form .form-submit .submit {
+      background-color: #e51414;
+      border-color: #e51414;
+      color: #fff;
+      cursor: pointer;
+      opacity: 0.6; }
+      .single-product .single-product-wrapper .single-tabs .tab-panel .tab-panel-reviews .review-form-wrapper .comment-form .form-submit .submit:hover {
+        opacity: 1; }
