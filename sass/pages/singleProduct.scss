@@ -1,10 +1,24 @@
 @import "../components/singleProduct/breadcrumb";
+@import "../components/singleProduct/productGallery";
+@import "../components/singleProduct/productInfo";
+
 
 .single-product {
     .single-product-wrapper {
         .single-topbar {
             margin-top: 30px;
            
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .single-product {
+        .single-content {
+            .site-main {
+                flex-direction: column;
+            }
         }
     }
 }

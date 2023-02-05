@@ -17,6 +17,9 @@
             .policy-item-info {
                 @include d-flex(center, start);
                 flex-direction: column;
+                h4 {
+                    white-space: nowrap;
+                }
                 span {
                     font-size: 12px;
                     opacity: 0.8;

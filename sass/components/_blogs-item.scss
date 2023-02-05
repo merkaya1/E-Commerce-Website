@@ -9,8 +9,12 @@
         min-width: 300px;
         .blog-img {
           display: flex;
+          overflow: hidden;
           img {
             width: 100%;
+            &:hover {
+              scale: 1.2;
+            }
           }
         }
         .blog-info {

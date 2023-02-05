@@ -1,8 +1,7 @@
 .single-product {
     .breadcrumb {
         ul {
-            @include d-flex (flex-start, center);
-            
+            @include d-flex(flex-start, center);
             li {
                 font-size: 12px;
                 &:not(:last-child)::after {
