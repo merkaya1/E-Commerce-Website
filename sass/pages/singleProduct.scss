@@ -1,24 +1,28 @@
-@import "../components/singleProduct/breadcrumb";
-@import "../components/singleProduct/productGallery";
-@import "../components/singleProduct/productInfo";
-
+@import '../components/singleProduct/breadcrumb';
+@import '../components/singleProduct/productGallery';
+@import '../components/singleProduct/productInfo';
+@import '../components/singleProduct/productTabs';
 
 .single-product {
-    .single-product-wrapper {
-        .single-topbar {
-            margin-top: 30px;
-           
-        }
+  .single-product-wrapper {
+    .single-topbar {
+      margin-top: 30px;
     }
+  }
 }
 
-
-@media (max-width:768px) {
-    .single-product {
-        .single-content {
-            .site-main {
-                flex-direction: column;
-            }
+@media (max-width: 768px) {
+  .single-product {
+    .single-content {
+      .site-main {
+        flex-direction: column;
+        .product-gallery {
+          width: 100%;
         }
+        .product-info {
+          width: 100%;
+        }
+      }
     }
+  }
 }

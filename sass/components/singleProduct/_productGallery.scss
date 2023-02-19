@@ -1,44 +1,61 @@
 .single-product {
-    .single-content {
-        margin: 30px 0;
-        .site-main {
-            @include d-flex(space-between, flex-start);
-            gap: 30px;
-           .product-gallery {
-            flex: 1; 
-            
-            .single-image-wrapper {
-                img {
-                    object-fit: cover;
-                    width: 100%;
-                    &:hover {
-                        cursor: zoom-in;
-                    }
-                }
+  .single-content {
+    margin: 30px 0;
+    .site-main {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      .product-gallery {
+        width: 50%;
+        .single-image-wrapper {
+          overflow: hidden;
+          img {
+            object-fit: cover;
+            width: 100%;
+            transform-origin: center;
+            transition: none;
+            &:hover {
+              cursor: zoom-in;
             }
-            .product-thumb {
-                .gallery-thums {
-                    @include d-flex(flex-start, center);
-                    gap: 5px;
-                    li{
-                        display: flex;
-                        cursor: pointer;
-                        img {
-                            width: 100%;
-                            border: 1px solid transparent;
-                            &:hover {
-                                border-color:  #000;
-                            }
-                            &.active {
-                                border-color: #000; 
-                            }
-                            
-                        }
-                    }
-                }
-                
-            }
-           } 
+          }
         }
+        .product-thumb {
+          position: relative;
+
+          .gallery-thums {
+            li {
+              display: flex;
+              cursor: pointer;
+              padding: 5px 0;
+              z-index: 5;
+              img {
+                width: 100%;
+                border: 1px solid transparent;
+
+                &:hover {
+                  border-color: #000;
+                }
+                &.active {
+                  border-color: #000;
+                }
+              }
+            }
+          }
+          .glide__arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            font-size: 25px;
+          }
+          .glide__arrow--left {
+            left: 0;
+          }
+          .glide__arrow--right {
+            right: 0;
+          }
+        }
+      }
     }
+  }
 }

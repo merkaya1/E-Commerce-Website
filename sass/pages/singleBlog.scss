@@ -1,0 +1,55 @@
+// boşş bu sayfayı componentlerde _blog-item olarak yaptık
+
+.single-blog {
+    margin-top: 30px;
+
+    figure {
+        img {
+            width: 100%;
+        }
+
+    }
+    .blog-wrapper {
+        .blog-meta {
+            display: flex;
+            font-size: 12px;
+            gap: 5px;
+            margin: 20px 0;
+            .blog-date {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                &::after, &::before {
+                    content: "";
+                    width: 15px;
+                    height: 1px;
+                    background-color: #000;
+                    
+                }
+            }
+            .blog-text {
+                font-weight: 600;
+            }
+        }
+        .blog-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .blog-content {
+            p{
+                font-size: 14px;
+                line-height: 1.5;
+                color: #75767c;
+                margin-bottom: 10px;
+            }
+            blockquote {
+                padding: 1rem 2rem;
+                border-left: 4px solid #dee0ea ;
+                margin: 20px 0;
+                p {
+                    margin: 0;  
+                }
+            }
+        }
+    }
+} 

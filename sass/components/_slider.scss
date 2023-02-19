@@ -31,6 +31,10 @@
           }
         }
       }
+      .fade {
+        animation-name: fade;
+        animation-duration: 2s;
+      }
       .slider-buttons {
         position: absolute;
         top: 0;
@@ -75,12 +79,24 @@
             &:hover {
               opacity: 1;
             }
+            &.active {
+              opacity: 1;
+            }
           }
         }
       }
     }
   }
   
+@keyframes fade { 
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
   @media (max-width: 582px) {
     .slider {
       .slider-elements {
